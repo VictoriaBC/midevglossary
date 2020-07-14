@@ -14,6 +14,8 @@ app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 @app.route('/')
+def hello():
+    return 'Hello World ...again'
 @app.route('/get_words')
 def get_words():
     return render_template("words.html",
