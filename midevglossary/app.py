@@ -8,14 +8,12 @@ from bson.objectid import ObjectId
 # Connection to Database
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
-app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+app.config["MONGO_URI"] = 'mongodb+srv://vpb:ztKQZus3.k9hkMY@myfirstcluster-zzbzp.mongodb.net/task_manager?retryWrites=true&w=majority'
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
 @app.route('/')
-def hello():
-    return 'Hello World ...again'
 @app.route('/get_words')
 def get_words():
     return render_template("words.html",
