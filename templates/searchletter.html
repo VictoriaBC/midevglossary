@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <h2>Word Results</h2>
 <div class="row">
-    {% if not result in letter|sort(attribute='word_name', case_sensitive=false) %}
+    {% if not letter|length %}
         <h3 class="text-center"><i>Oops! There are no words that start with this letter. Be the first to add one.<i></h3>
         <p><a href="{{ url_for('get_words') }}"> << back</a></p>
     {% else %}

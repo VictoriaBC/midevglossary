@@ -113,8 +113,7 @@ def get_letters(letter):
     print(letter)
     results = mongo.db.words.find(
         {"word_name": {"$regex": letter, "$options": 'i'}})
-    
-    return render_template('searchletter.html', letter=results)
+    return render_template('searchletter.html', letter=list(results))
     print(word_name)
 
 if __name__ == '__main__':

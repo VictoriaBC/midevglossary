@@ -1,12 +1,15 @@
-<p><h1>TESTING. Milestone 3 for Code Institute - A database web application.</h1><p>
+<p><h1>Milestone 3 for Code Institute - A database web application.</h1><p>
 <p><strong>MiDev Glossary</strong> app offers users such as professionals like Project Managers or Product Owners the possibility to understand their development teams better.</p>
 <p>You can find links to the application and github repository below:
-<p>The application <a href="https://tmfmdb.herokuapp.com/">live here.</a></p>
-<p>The Github link <a href="https://github.com/VictoriaBC/miniprojectpy/">here.</a></p>
+<p>The application <a href="https://midevglossary.herokuapp.com/">live here.</a></p>
+<p>The Github link <a href="https://github.com/VictoriaBC/midevglossary">here.</a></p>
 
 <h2>UX</h2>
 Very often abbreviations are used within development teams and this app helps Managers to gather what they hear and also use this app as an internal dictionary. Developers, Designers, Marketing specialists also have a chance to help the team and create a better way of working. Users can add/edit words, also add/edit categories, they can search words and navigate according to the alphabet.
+<img src="https://github.com/VictoriaBC/midevglossary/blob/9c6b88c8fa7aee42ba14cfd850605bc9feaf9a69/static/img/Screen%20Shot%202020-07-14%20at%2016.14.10.png">
 
+<h3>Design process:</h3>
+<p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develope (html, css, js, python, scss, mongodb and heroku, test the app, collect feedback and iterate)</p>
 <h2>User Stories</h2>
 As a new User I would like to:
 <li>be able to understand how to navigate in the application.</li>
@@ -16,7 +19,7 @@ As a new User I would like to:
 <li>be able to create and edir categories.</li>
 
 <h2>Wireframes</h2>
-<p>Wireframes are attached in my github repository as <a href="https://github.com/VictoriaBC/miniprojectpy/blob/master/MiDev_Glossary_Victoria.pdf">MiDev_Glossary_Victoria.pdf</a></p> 
+<p>Wireframes are attached in my github repository as <a href="https://github.com/VictoriaBC/midevglossary/blob/9c6b88c8fa7aee42ba14cfd850605bc9feaf9a69/MiDev_Glossary_Victoria.pdf">MiDev_Glossary_Victoria.pdf</a></p> 
 <p>The document contains the app structure, mobile and desktop wireframes.</p>
 
 <h2>Features</h2>
@@ -48,6 +51,7 @@ As a new User I would like to:
 <li>Authentication</li>
 <li>Login and Register</li>
 <li>Images</li>
+<li>Flash messages</li>
 
 <h3>Main Technologies Used</h3>
 For this project I used Python, HTML, CSS, Sass and Javascript programming languages.
@@ -75,70 +79,48 @@ For this project I used Python, HTML, CSS, Sass and Javascript programming langu
 <li>Pep8online to test app.py</li>
 
 <h3>Meeting the needs of the user stories (described  earlier in the UX section of this README file)</h3>
-<li>
 <p>As a new User I want to be able to understand how to navigate around the web application.</p>
 <p>On landing page, the user is welcomed with a welcome text and information about this app, imediately followed below by search, alphabet navigation and common glossary.</p> 
 <p>Navigation in the header at the top of the page. The Logo, when clicked, redirects the user to Landing page</p>
-</li>
-
-<li>
 <p>As a user I would like to be able to add words, edit them and also add, edit categories.</p>
-</li>
-
-<li>
 <p>As a user I would like this application to be responsive.</p>
-</li>
 
 <h3>Deployment</h3>
 <p>heroku - git - PIP - Python 3 - Flask - A MongoDB Atlas account</p>
+<p>The app is designed in Gitpod environment and committed to GitHub. Issues occured when I deployed manually, the tried to this through gitpod. Recommendation: Do not deploy manually, only through gitpod terminal.</p>
 
-<h3></h3>Instructions for Installation</h3>
+<h3>The following steps were taken to deploy this project to Github:</h3>
+<li>created a master branch in Github repository through <a href="https://github.com/Code-Institute-Org/gitpod-full-template">Gitpod fulltemplate.</a></li>
+<li>Committed files using bash terminal commands: git status; git add (specify directory); git commit -m "Initial commit"</li>
+<li>Commited and pushed files to the working environment with commands git push, which updates the repository.</li>
 
-<p>Make your folders and navigate to it on the terminal. Enter the following in the terminal:</p>
-<li>$ git clone https://github.com/haydal810/Milestone-Project-3.git</li>
-<li>$ pip3 install </li>
-$ pip install -r requirements.txt
-To run the app locally:
-$ python -m flask run
-Heroku Deployment
-The code was also pushed from git to heroku for live deployment: https://www.heroku.com/
+<h3>To set .gitignore environment variables:</h3>
+<li>Create file env.py in the root directory of your project. You will then define your variables there because you do not want to expose your MONGODB password and credentials to public.</li>
+<li>Create .gitignore in the root directory of your project.</li>
+<li>You will nedd to stop git from pushing this file to github, and so keep your environment variables secret. Open .gitignore file add the following text: env.py</li>
+<li>Type import os at the top of your env.py file. Once added, type underneath your environment variables using the following syntax:
+os.environ["Variable Name Here"] = "Value of Variable Goes Here"</li>
+<li>Now your environment variables are set in your env.py file. After this you can use them using the following syntax:
+MONGODB_NAME = os.environ.get('MONGODB_NAME')</li>
 
-To Deploy using Heroku Git, use git in the command line:
+<h3>To deploy the project to Heroku :</h3>
+<li>Create a Heroku account</li>
+<li>Create requirements.txt file in Gitpod workspace for Heroku to understand installation files to run app.</li> 
+<li>Then from CLI type pip3 freeze --local > requirements.txt.</li>
+<li>Type in terminal Heroku login.</li>
+<li>To get the application running create a Procfile that istructs Heroku which file is the entry point.</li> 
+<li>Follow these commands to create this: echo web: python app.py</li>
+<li>To push from Github to Heroku use following CLI commands: git add ., git commit -m "fist Heroku commit", git push</li>
+<li>To scale dynos and run the app in Heroku, use commands: heroku ps:scale web=1</li>
+<li>We will need to run our Flask application in Heroku, so we need to specify IP and Port in Heroku. To do this go to Settings tab > Config Variables and input: IP Address: 0.0.0.0; Port: 8080</li>
 
-Install the Heroku CLI. If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
-$ heroku login
-Clone the repository. Use Git to clone the projects source code to your local machine.
-$ heroku git:clone -a kerry-rivers-ms3
-$ cd kerry-rivers-ms3
-create your requirements.txt file
-$ pip freeze --local > requirements.txt
+<h3>To Deploy using Heroku Git, use git in the command line:</h3>
 
-create your procfile file
-$ echo web: python app.py > Procfile
+<li>Deploy your changes. Make some changes to the code you just cloned and deploy them to Heroku using Git.</li>
+<li>$ git add .</li>
+<li>$ git commit -am "commit message"</li>
+<li>$ git push heroku master</li>
+<li>Go to Heroku. In the heroku dashboard, click on the button "Open App".</li>
 
-Deploy your changes. Make some changes to the code you just cloned and deploy them to Heroku using Git.
-$ git add .
-$ git commit -am "commit message"
-$ git push heroku master
-In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
-
-Set the following config vars:
-
-IP : 0.0.0.0
-PORT: 5000
-MONGO_URI: mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
-To get your MONGO_URI read the MongoDB Atlas documentation: HERE
-
-In the heroku dashboard, click on the button "Open App".
-The app should open in a new tab.
-
-Credits
-Content
-All text in this project was written by the developer.
-
-Media
-The background image was sourced from https://www.pexels.com/
-Acknowledgements
-I'd like to thank my mentor, Antonija Šimić, for her useful and constructive feedback throughout the Milestone Project
-The content of this website is for educational purposes only.
-Thank you.
+<h3>Credits</h3>
+<p>The contents all from Developer and inspired from <a href="https://github.com/RobSimons1/ocean-dictionary">RobSimons1</a> and <a href="https://github.com/haydal810/Milestone-Project-3">David Hayden</a>.</p>
