@@ -11,6 +11,7 @@
 <body class="background grey lighten-4">
 
 <!-- Header -->
+<main>
     <header>
         <nav class="header teal darken-4">
             <div class="nav-wrapper">
@@ -83,17 +84,7 @@
 </div>
         {% block content %} {% endblock %}
     </div>
-
-<!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-            $('select').material_select();
-            $(".button-collapse").sideNav();
-        });
-    </script>
+</main>
 
 <!-- Footer -->
     <footer class="page-footer teal darken-4">
@@ -111,6 +102,16 @@
             </div>
           </div>
     </footer>
+<!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $(".button-collapse").sideNav();
+        });
+    </script>
 </body>
 
 </html>
