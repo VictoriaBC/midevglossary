@@ -32,7 +32,7 @@ As a new User I would like to:
 <li>Primary button color: #004d40 teal darken-4</li>
 <li>Secondary button color: #26a69a teal lighten-1</li>
 <li>Header and Footer color: #004d40 teal darken-4</li>
-<img src="https://github.com/VictoriaBC/miniprojectpy/blob/master/tmfmdb/static/img/Screen%20Shot%202020-07-09%20at%2023.01.38.png">
+<img src="https://github.com/VictoriaBC/midevglossary/blob/master/static/img/Screen%20Shot%202020-07-09%20at%2023.01.38.png?raw=true">
 
 <h3>Buttons</h3>
 <p>Buttons in this application are from component library <a href="https://materializecss.com/">Materialize</a>.</p>
