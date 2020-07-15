@@ -9,7 +9,7 @@ Very often abbreviations are used within development teams and this app helps Ma
 <img src="https://github.com/VictoriaBC/midevglossary/blob/master/static/img/Screen%20Shot%202020-07-14%20at%2016.14.10.png?raw=true">
 
 <h3>Design process:</h3>
-<p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develope (html, css, js, python, scss, mongodb and heroku, test the app, collect feedback and iterate)</p>
+<p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develop (tools: html, css, js, python, scss, mongodb and heroku, test: usability and collect feedback then update)</p>
 <h2>User Stories</h2>
 As a new User I would like to:
 <li>be able to understand how to navigate in the application.</li>
