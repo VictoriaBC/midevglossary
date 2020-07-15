@@ -6,7 +6,7 @@
 
 <h2>UX</h2>
 Very often abbreviations are used within development teams and this app helps Managers to gather what they hear and also use this app as an internal dictionary. Developers, Designers, Marketing specialists also have a chance to help the team and create a better way of working. Users can add/edit words, also add/edit categories, they can search words and navigate according to the alphabet.
-<img src="https://github.com/VictoriaBC/midevglossary/blob/9c6b88c8fa7aee42ba14cfd850605bc9feaf9a69/static/img/Screen%20Shot%202020-07-14%20at%2016.14.10.png">
+<img src="https://github.com/VictoriaBC/midevglossary/blob/master/static/img/Screen%20Shot%202020-07-14%20at%2016.14.10.png?raw=true">
 
 <h3>Design process:</h3>
 <p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develope (html, css, js, python, scss, mongodb and heroku, test the app, collect feedback and iterate)</p>
