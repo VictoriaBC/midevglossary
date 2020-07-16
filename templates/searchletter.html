@@ -1,16 +1,16 @@
 {% extends 'base.html' %} {% block content %}
-    <!-- Title -->
+<!-- Title -->
 <h2>Word Results</h2>
-    <!-- Result if missing -->
+<!-- Result if missing -->
 <div class="row">
     {% if not letter|length %}
-        <p class="text-center" style="font-size: 2rem;"><i>Oops! There are no words that start with this letter. Be the first to add one.<i></p>
-        <p><a href="{{ url_for('get_words') }}"> << back</a></p>
+    <p class="text-center" style="font-size: 2rem;"><i>Oops! There are no words that start with this letter. Be the first to add one.<i></p>
+    <p><a href="{{ url_for('get_words') }}"> << back</a></p>
     {% else %}
     <!-- Result if not missing -->
-<ul class="collapsible" data-collapsible="accordion">
-{% for result in letter|sort(attribute='word_name', case_sensitive=false) %}
-    <!-- Accordion -->
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for result in letter|sort(attribute='word_name', case_sensitive=false) %}
+        <!-- Accordion -->
         <li>
             <div class="collapsible-header">
                 <div class="col s3">
@@ -18,19 +18,19 @@
                     <a href="{{url_for('delete_word', word_id=result._id)}}" class="waves-effect waves-dark z-depth-4 btn btn_small" style="padding-right: 65px; color: #004d40; background-color: #ffffff; border: 2px solid #004d40;">Delete</a>
                     <a href="{{url_for('edit_word', word_id=result._id)}}" class="waves-effect waves-light z-depth-4 btn btn_small teal darken-4">Edit</a>
                 </div>
-    <!-- Name and Description -->
+                <!-- Name and Description -->
                 <div class=" word_header col s9">
                     <strong>{{result.word_name}}</strong>
                 </div>
             </div>
             <div class="collapsible-body">
                 <span>
-                    {{result.word_description}}
+                {{result.word_description}}
                 </span>
             </div>
         </li>
-{% endfor %}
-    {% endif %} 
-</ul> 
-</div>   
+        {% endfor %}
+        {% endif %} 
+    </ul>
+</div>
 {% endblock %}

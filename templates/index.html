@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>MiDev Glossary</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
-    <link rel="stylesheet" href="css/_variables.scss">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body class="background grey lighten-4">
-
-<!-- Header -->
-    <header>
-        <nav class="header teal darken-4">
-            <div class="nav-wrapper">
-                <a href="{{url_for('get_words')}}" class="brand-logo"><strong>MiDev Glossary</strong></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('get_words')}}">Home</a></li>
-                    <li><a href="{{url_for('add_word')}}">Add New Word</a></li>
-                    <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{{url_for('get_words')}}">Home</a></li>
-                    <li><a href="{{url_for('add_word')}}">Add New Word</a></li>
-                    <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-<!-- Intro -->
-<section class="image-container container-hero main-hero grey lighten-4">
-    <div class="row no-margin">
-        <p class="hero-title"><h1>Welcome to MiDev Glossary</h1>
-        <p><i>On this website you can find a compilation of IT and other tech terms that will help you understand your development team better.</i></p> 
-        <p><i>You can add web terms you have heard and spread your knowledge with your colleagues.</i></p>
-    </div>
-</section>
-    <div class="container">
-        <div class="row">
-    </div>
-        {% block content %} {% endblock %}
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-            $('select').material_select();
-            $(".button-collapse").sideNav();
-        });
-    </script>
-
-<!-- Footer -->
-    <div style="margin-top: 150px">
-        <footer class="page-footer teal darken-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <p class="white-text">MiDev Glossary</p>
-                <p class="grey-text text-lighten-4"></p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
+    <head>
+        <title>MiDev Glossary</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+        <link rel="stylesheet" href="css/_variables.scss">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="background grey lighten-4">
+        <!-- Header -->
+        <main>
+            <header>
+                <nav class="header teal darken-4">
+                    <div class="nav-wrapper">
+                        <a href="{{url_for('get_words')}}" class="brand-logo"><strong>MiDev Glossary</strong></a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="{{url_for('get_words')}}">Home</a></li>
+                            <li><a href="{{url_for('add_word')}}">Add New Word</a></li>
+                            <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="{{url_for('get_words')}}">Home</a></li>
+                            <li><a href="{{url_for('add_word')}}">Add New Word</a></li>
+                            <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Intro -->
+            <section class="image-container container-hero main-hero grey lighten-4">
+                <div class="row no-margin">
+                    <p class="hero-title">
+                    <h1>Welcome to MiDev Glossary</h1>
+                    <p><i>On this website you can find a compilation of IT and other tech terms that will help you understand your development team better.</i></p>
+                    <p><i>You can add web terms you have heard and spread your knowledge with your colleagues.</i></p>
+                </div>
+            </section>
             <div class="container">
-            © Victoria P. Ben-Chivar for Milestone 3
+                <div class="row">
+                </div>
+                {% block content %} {% endblock %}
             </div>
-          </div>
-        </footer>
-    </div>
-</body>
-
+        </main>
+        <!-- Footer -->
+        <div style="margin-top: 150px">
+            <footer class="page-footer teal darken-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <p class="white-text">MiDev Glossary</p>
+                            <p class="grey-text text-lighten-4"></p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © Victoria P. Ben-Chivar for Milestone 3
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.collapsible').collapsible();
+                $('select').material_select();
+                $(".button-collapse").sideNav();
+            });
+        </script>
+    </body>
 </html>

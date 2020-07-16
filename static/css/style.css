@@ -124,6 +124,9 @@ h1 {
     font-size: 28px;
 }
 
+h2 {
+    font-size: 21px;
+}
 /* -----------------------Logo */
 .nav-wrapper .brand-logo {
     margin-left: 5px;
@@ -194,6 +197,10 @@ h1 {
     font-size: 28px;
 }
 
+h2 {
+    font-size: 21px;
+}
+
 /* -----------------------Logo */
 .nav-wrapper .brand-logo {
     margin-left: 5px;
@@ -241,6 +248,11 @@ h1 {
 
 h1 {
     font-size: 28px;
+}
+
+h2 {
+    font-size: 21px;
+    padding-top: 20px;
 }
 
 /* -----------------------Logo */
@@ -292,6 +304,11 @@ h1 {
     font-size: 23px;
 }
 
+h2 {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
 /* -----------------------Logo */
 .nav-wrapper .brand-logo {
     margin-left: 5px;
@@ -339,6 +356,11 @@ h1 {
 
 h1 {
     font-size: 23px;
+}
+
+h2 {
+    font-size: 18px;
+    padding-top: 20px;
 }
 
 /* -----------------------Logo */
@@ -390,6 +412,11 @@ h1 {
     font-size: 23px;
 }
 
+h2 {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
 /* -----------------------Logo */
 .nav-wrapper .brand-logo {
     margin-left: 5px;
@@ -404,4 +431,12 @@ h1 {
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
+}
+
+.btn_mobile {
+    margin-top: 25px; 
+}
+
+button {
+    margin-bottom: 10px;
 }}

@@ -8,22 +8,22 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">poll</i>
-            <!-- Choose category-->    
+                <!-- Choose category-->    
                 <select id="category" name="category_name" required="required">
-                  <option value="" disabled selected>Choose Category</option>
-                  {% for cat in categories %}
-                      {% if cat.category_name == word.category_name%}
-                      <option value="{{cat.category_name}}" selected >{{cat.category_name}}</option>
-                      {% else %}
-                       <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                    <option value="" disabled selected>Choose Category</option>
+                    {% for cat in categories %}
+                    {% if cat.category_name == word.category_name%}
+                    <option value="{{cat.category_name}}" selected >{{cat.category_name}}</option>
+                    {% else %}
+                    <option value="{{cat.category_name}}">{{cat.category_name}}</option>
                     {% endif %}
-                  {% endfor %}
+                    {% endfor %}
                 </select>
                 <label>Word Category</label>
             </div>
         </div>
         <div class="row">
-        <!-- Name -->
+            <!-- Name -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
                 <input id="word_name" name="word_name" type="text" required="required" value="{{word.word_name}}">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="row">
-        <!-- Description -->
+            <!-- Description -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="word_description" id="word_description" class="materialize-textarea">{{word.word_description}}</textarea>
@@ -39,15 +39,14 @@
             </div>
         </div>
         <div class="row">
-        <!-- Edit and Cancel -->
+            <!-- Edit and Cancel -->
             <button class="btn waves-effect z-depth-4 waves-light teal darken-4" type="submit" name="action">Edit Word
-                <i class="material-icons right">playlist_add</i>
-             </button>
+            <i class="material-icons right">playlist_add</i>
+            </button>
             <a href="{{ url_for('get_words') }}" class="waves-effect z-depth-4 waves-light btn grey">
-                <i class="material-icons right">cancel</i>Cancel
+            <i class="material-icons right">cancel</i>Cancel
             </a>
         </div>
     </form>
 </div>
-
 {% endblock %}
