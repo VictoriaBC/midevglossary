@@ -12,12 +12,15 @@
 <p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develop (tools: html, css, js, python, scss, mongodb and heroku, test: usability and collect feedback then update)</p>
 <p><strong>Discover:</strong>researched the right focus group which are Project Managers and Product Owners, researched and gathered other glossary apps, that I later got inspired from. Decided which platform to code the app on and where to deploy, the database, which code language I should use.
 Languages and platform - html, css, scss, python, gitpod. Database - MongoDB, Deployment platform - Heroku.</p>
-<p><strong>Define:</strong>this process involve defining what the issues are for our users and how we solve them. Product Owners and Project Managers do not always have a full technical Background and
-this app serves them a place where they can search words they hear from development teams and also store words with a description to save for themselves or share with others. It important that everyone speaks the same language and understand eachother in a project.
+<p><strong>Define:</strong>this process involve defining what the issues for our users and how we solve them, what is expected from an MVP (Minimum Viable Product) and what is expected from Product Owners and Project Managers who do not always have a full technical background.
+This app offers them a place where they can search words they hear from development teams and also store words with a description to save for themselves or share with others. It important that everyone speaks the same language and understand eachother in a project.
 Users search words differently, which is why both an input search field and alphabet navigation are good options.</p>
-<p><strong>Deliver:</strong>before developing the app it is important to undertand it's structure and user flow. After I finished with the structure and user flow I continued with creating sketches, wireframes and even Hi-fidelity prototype. I collected feedback and iterated my design numerous times before I started developing.</p>
-<p><strong>Develop:</strong>minor changes were performed in the UI (User Interface) after being coded. I made sure I had the right structure and followed the UX/UI delivereables as close as possible. During this process I used  html, css, js, python, scss, mongodb and heroku. I tested the on responsiveness and also with users. 
-To understand better how users interact with the app it is recommended to do evaluation after the app is launched in production. Gathering feedback surveys, contacting users for an interview and using tools like Hotjar, Google analytics, Google Tag Manager may be very useful.</p>
+<p><strong>Deliver:</strong>before developing the app it is important to undertand it's structure and user flow. After I finished with the structure and user flow I continued with creating sketches, wireframes and even Hi-fidelity prototype. I collected feedback and iterated my design numerous times before I started developing. I used Adobe XD to create the wireframe and prototype.</p>
+<p><strong>Develop:</strong>minor changes were performed in the UI (User Interface) after being coded. I made sure I had the right structure and followed the UX/UI delivereables as close as possible. During this process I used  html, css, js, python, scss, mongodb and heroku. I tested the on responsiveness and also with users. The code itself was tested on W3C HTML Validator, 
+W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspect to test for responsiveness.</p>
+
+<p>To understand better how users interact with the app it is recommended to do evaluation after the app is launched in production. Gathering feedback surveys, contacting users for an interview and using tools like Hotjar, Google analytics, Google Tag Manager may be very useful.</p>
+<img src="https://github.com/VictoriaBC/midevglossary/blob/1f0f3095138a1f555409748fefbf5c09056e1692/static/img/Screen%20Shot%202020-07-16%20at%2019.30.25.png">Protoype environment.
 
 <h2>User Stories</h2>
 <p>As a new User I would like to:</p>
@@ -85,7 +88,8 @@ To understand better how users interact with the app it is recommended to do eva
 <h3>HTML, CSS and JS code</h3>
 <li>W3C HTML Validator.</li>
 <li>W3C CSS Validator.</li>
-<li>Pep8online to test app.py</li>
+<li>Pep8online to test app.py.</li>
+<li>ami.responsivedesign.is and Inspect to test for responsiveness.</li>
 
 <h3>Meeting the needs of the user stories (described  earlier in the UX section of this README file)</h3>
 <p>As a new User I want to be able to understand how to navigate around the web application.</p>
