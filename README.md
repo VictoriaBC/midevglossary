@@ -22,6 +22,8 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <p>To understand better how users interact with the app it is recommended to do evaluation after the app is launched in production. Gathering feedback surveys, contacting users for an interview and using tools like Hotjar, Google analytics, Google Tag Manager may be very useful.</p>
 <img src="https://github.com/VictoriaBC/midevglossary/blob/1f0f3095138a1f555409748fefbf5c09056e1692/static/img/Screen%20Shot%202020-07-16%20at%2019.30.25.png">Protoype environment.
 
+<p>Creating a functional design system according to Atomic Design may handful in the future</p>
+
 <h2>User Stories</h2>
 <p>As a new User I would like to:</p>
 <li>be able to understand how to navigate in the application.</li>
@@ -64,9 +66,12 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <li>Login and Register</li>
 <li>Images</li>
 <li>Flash messages</li>
+<li>Pagination</li>
+<li>Search under Manage Categories</li>
+<li>Separate field for links in Add New Word</li>
 
 <h3>Main Technologies Used</h3>
-<p>For this project I used Python, HTML, CSS, Sass and Javascript programming languages.</p>
+<p>For this project I used Python, HTML, CSS and Sass programming languages.</p>
 
 <h3>Tools used</h3>
 <li>Used Heroku for uploading the app and Mongo DB for keeping database.</li>
@@ -82,7 +87,7 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <li>Google Fonts to easily use simple and recognizable fonts on the internet https://fonts.google.com/.</li>
 
 <h3>Testing</h3>
-<li>User Testing - people were are asked to visit the app and test. REason is to collect feedback and improve the app.</li>
+<li>User Testing - people were are asked to visit the app and test. Reason is to collect feedback and improve the app.</li>
 <li>Tested browser lists: Google Chrome, Chrome Lighthouse for audit of website, Safari.</li>
 
 <h3>HTML, CSS and JS code</h3>
@@ -136,4 +141,4 @@ MONGODB_NAME = os.environ.get('MONGODB_NAME')</li>
 <li>Go to Heroku. In the heroku dashboard, click on the button "Open App".</li>
 
 <h3>Credits</h3>
-<p>The contents all from Developer, also inspired from Code Institute lessons, <a href="https://github.com/RobSimons1/ocean-dictionary">RobSimons1</a> and <a href="https://github.com/haydal810/Milestone-Project-3">David Hayden</a>.</p>
+<p>The content is all from the developer, also inspired from Code Institute lessons, <a href="https://github.com/RobSimons1/ocean-dictionary">RobSimons1</a> and <a href="https://github.com/haydal810/Milestone-Project-3">David Hayden</a>.</p>
