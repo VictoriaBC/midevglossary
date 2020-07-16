@@ -1,22 +1,25 @@
-{% extends 'base.html'%}
-{% block content %}
+{% extends 'base.html'%}{% block content %}
+<!-- Title -->
 <h2>Word Results</h2>
 <ul>
+    <!-- Result if missing -->
     {% if not query %}
-        <h3 class="text-center"><i>Oops! This name is not in our DataBase.<i></h3>
+        <p class="text-center" style="font-size: 2rem;"><i>Oops! This name is not in our DataBase.<i></p>
         <p><a href="{{ url_for('get_words') }}"> << back</a></p>
     {% else %}
+    <!-- Result if not missing -->
 {% for que in query|sort(attribute='word_name', case_sensitive=false) %}
     <div class="row">
+    <!-- Accordion -->
         <ul class="collapsible" data-collapsible="accordion">
         <li>
             <div class="collapsible-header">
                <div class="col s3">
                     <i class="material-icons">expand_more</i>
-                    <a href="{{url_for('delete_word', word_id=que._id)}}" class="waves-effect waves-light btn btn_small" style="padding-right: 65px; color: #004d40; background-color: #ffffff; border: 2px solid #004d40;">Delete</a>
-                    <a href="{{url_for('edit_word', word_id=que._id)}}" class="waves-effect waves-light btn btn_small teal darken-4">Edit</a>
+                    <a href="{{url_for('delete_word', word_id=que._id)}}" class="waves-effect waves-light z-depth-4 btn btn_small" style="padding-right: 65px; color: #004d40; background-color: #ffffff; border: 2px solid #004d40;">Delete</a>
+                    <a href="{{url_for('edit_word', word_id=que._id)}}" class="waves-effect waves-light z-depth-4 btn btn_small teal darken-4">Edit</a>
                 </div>
-   
+    <!-- Name and Description -->
                 <div class=" word_header col s9">
                     <strong>{{que.word_name}}</strong>
                 </div>
@@ -27,8 +30,8 @@
                 </span>
             </div>
         </li>
-         </ul>
-        </div>
+        </ul>
+    </div>
         {% endfor %}  
     {% endif %}               
     </ul>  

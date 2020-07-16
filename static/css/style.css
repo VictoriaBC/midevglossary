@@ -1,12 +1,17 @@
- body {
+/* =============================================================================== */
+/* Note that some style is in the html due to customize conflict with Materialize */
+/* ============================================================================= */
+/* ---------------------------------------- Body and Main */
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
-  main {
+
+main {
     flex: 1 0 auto;
   }
-
+/* ---------------------------------------- Buttons */
 .btn_small {
     height: 24px;
     width: 60px;
@@ -15,18 +20,18 @@
     padding: 0 0.5em;
 }
 
+/* ---------------------------------------- Accordion */
 .task_header {
     margin-top: 5px;
     margin-right: 10px;
 }
-
+/* ----------------------------------------Hero */
 .container-hero {
     width: 100%;
     height: 150px;
     align-content: center;
 }
 
-/* ----------------------------------------Desktop */
 .main-hero {
     width: 100%;
     height: 250px;
@@ -41,9 +46,10 @@
 }
 
 .hero-title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+/* ----------------------------------------Text */
 p {
     font-size: 1rem;
 }
@@ -59,14 +65,343 @@ p {
     margin-left: 20px;
 }
 
+/* ----------------------------------BREAKING POINTS */
+@media (max-width: 1366px) {
+     /*Main Image*/
+.image-container {
+    padding: 0;
+    width: 100%;
+}
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
+}
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+@media (max-width: 1200px) {
+     /*Main Image*/
+.image-container {
+    padding: 0;
+    width: 100%;
+}
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
+}
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+/* -----------------------Text */
+
+h1 {
+    font-size: 28px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 25px;
+    padding: 0 0.5em;
+}}
+/* -----------------------Text */
+
+h1 {
+    font-size: 23px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}}
+
+
+@media (max-width: 1024px) {
+     /*Main Image*/
+.image-container {
+    padding: 0;
+    width: 100%;
+}
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
+}
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+/* -----------------------Text */
+
+h1 {
+    font-size: 28px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 25px;
+    padding: 0 0.5em;
+}}
+
+
+@media (max-width: 991px) {
+     /*Main Image*/
+.image-container {
+    padding: 0;
+    width: 100%;
+}
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
+}
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+/* -----------------------Text */
+
+h1 {
+    font-size: 28px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 25px;
+    padding: 0 0.5em;
+}}
+
+
 @media (max-width: 767px) {
     /*Main Image*/
 .image-container {
     padding: 0;
     width: 100%;
 }
-<<<<<<< HEAD
+
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
 }
-=======
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
 }
->>>>>>> a716d9c45320d2845d15242cf8b01a087fe00bfd
+/* -----------------------Text */
+
+h1 {
+    font-size: 23px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}}
+
+
+@media (max-width: 575px) {
+    /*Main Image*/
+.image-container {
+    padding: 0;
+    width: 100%;
+}
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
+}
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+/* -----------------------Text */
+
+h1 {
+    font-size: 23px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}}
+
+
+@media (max-width: 360px) {
+    /*Main Image*/
+.image-container {
+    padding: 0;
+    width: 100%;
+}
+/* ------------------ Hero */
+.container-hero {
+    width: 100%;
+    height: 150px;
+    align-content: center;
+}
+
+.main-hero {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1280px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+/* -----------------------Text */
+
+h1 {
+    font-size: 23px;
+}
+
+/* -----------------------Logo */
+.nav-wrapper .brand-logo {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* -----------------------Buttons */
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}}

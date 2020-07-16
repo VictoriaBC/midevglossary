@@ -1,9 +1,11 @@
 import os
+# env used to hide original app configuration
 if os.path.exists("env.py"):
   import env 
 from flask import Flask, render_template, redirect, request, url_for, request
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+
 
 # Connection to Database
 app = Flask(__name__)
@@ -14,16 +16,22 @@ app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 @app.route('/')
+
+
+# Get words
 @app.route('/get_words')
 def get_words():
     return render_template("words.html",
-                           words=mongo.db.words.find())
+                           words=mongo.db.words.find() .sort("word_name"))
 
+# Add word
 @app.route('/add_word')
 def add_word():
     return render_template('addword.html',
                            categories=mongo.db.categories.find())
 
+
+# Insert word
 @app.route('/insert_word', methods=['POST'])
 def insert_word():
     words =  mongo.db.words
@@ -31,6 +39,7 @@ def insert_word():
     return redirect(url_for('get_words'))
 
 
+# Edit word
 @app.route('/edit_word/<word_id>')
 def edit_word(word_id):
     the_word =  mongo.db.words.find_one({"_id": ObjectId(word_id)})
@@ -38,6 +47,8 @@ def edit_word(word_id):
     return render_template('editword.html', word=the_word,
                            categories=all_categories)
 
+
+# Update word
 @app.route('/update_word/<word_id>', methods=["POST"])
 def update_word(word_id):
     words = mongo.db.words
@@ -50,30 +61,35 @@ def update_word(word_id):
     return redirect(url_for('get_words'))
 
 
+# Delete Word
 @app.route('/delete_word/<word_id>')
 def delete_word(word_id):
     mongo.db.words.remove({'_id': ObjectId(word_id)})
     return redirect(url_for('get_words'))
 
 
+# Get categories
 @app.route('/get_categories')
 def get_categories():
     return render_template('categories.html',
-                           categories=mongo.db.categories.find())
+                           categories=mongo.db.categories.find() .sort("category_name"))
 
 
+# Delete category
 @app.route('/delete_category/<category_id>')
 def delete_category(category_id):
     mongo.db.categories.remove({'_id': ObjectId(category_id)})
     return redirect(url_for('get_categories'))
 
 
+# Edit category
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     return render_template('editcategory.html',
     category=mongo.db.categories.find_one({'_id': ObjectId(category_id)}))
 
 
+# Update category
 @app.route('/update_category/<category_id>', methods=['POST'])
 def update_category(category_id):
     mongo.db.categories.update(
@@ -82,6 +98,7 @@ def update_category(category_id):
     return redirect(url_for('get_categories'))
 
 
+# Insert category
 @app.route('/insert_category', methods=['POST'])
 def insert_category():
     category_doc = {'category_name': request.form.get('category_name')}
@@ -89,9 +106,11 @@ def insert_category():
     return redirect(url_for('get_categories'))
 
 
+# Add category
 @app.route('/add_category')
 def add_category():
     return render_template('addcategory.html')
+
 
 # GET METHOD for Search Bar
 @app.route('/get_search')
@@ -105,7 +124,7 @@ def get_search():
     print(query)
     print(results)
     return render_template('search.html', query=list(results))
-    
+
 
 # Function for Individual Letter search
 @app.route('/get_letters/<letter>')

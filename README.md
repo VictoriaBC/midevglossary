@@ -5,13 +5,22 @@
 <p>The Github link <a href="https://github.com/VictoriaBC/midevglossary">here.</a></p>
 
 <h2>UX</h2>
-Very often abbreviations are used within development teams and this app helps Managers to gather what they hear and also use this app as an internal dictionary. Developers, Designers, Marketing specialists also have a chance to help the team and create a better way of working. Users can add/edit words, also add/edit categories, they can search words and navigate according to the alphabet.
+<p>Very often abbreviations are used within development teams and this app helps Managers to gather what they hear and also use this app as an internal dictionary. Developers, Designers, Marketing specialists also have a chance to help the team and create a better way of working. Users can add/edit words, also add/edit categories, they can search words and navigate according to the alphabet.</p>
 <img src="https://github.com/VictoriaBC/midevglossary/blob/master/static/img/Screen%20Shot%202020-07-14%20at%2016.14.10.png?raw=true">
 
-<h3>Design process:</h3>
+<h2>Design process:</h2>
 <p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develop (tools: html, css, js, python, scss, mongodb and heroku, test: usability and collect feedback then update)</p>
+<p><strong>Discover:</strong>researched the right focus group which are Project Managers and Product Owners, researched and gathered other glossary apps, that I later got inspired from. Decided which platform to code the app on and where to deploy, the database, which code language I should use.
+Languages and platform - html, css, scss, python, gitpod. Database - MongoDB, Deployment platform - Heroku.</p>
+<p><strong>Define:</strong>this process involve defining what the issues are for our users and how we solve them. Product Owners and Project Managers do not always have a full technical Background and
+this app serves them a place where they can search words they hear from development teams and also store words with a description to save for themselves or share with others. It important that everyone speaks the same language and understand eachother in a project.
+Users search words differently, which is why both an input search field and alphabet navigation are good options.</p>
+<p><strong>Deliver:</strong>before developing the app it is important to undertand it's structure and user flow. After I finished with the structure and user flow I continued with creating sketches, wireframes and even Hi-fidelity prototype. I collected feedback and iterated my design numerous times before I started developing.</p>
+<p><strong>Develop:</strong>minor changes were performed in the UI (User Interface) after being coded. I made sure I had the right structure and followed the UX/UI delivereables as close as possible. During this process I used  html, css, js, python, scss, mongodb and heroku. I tested the on responsiveness and also with users. 
+To understand better how users interact with the app it is recommended to do evaluation after the app is launched in production. Gathering feedback surveys, contacting users for an interview and using tools like Hotjar, Google analytics, Google Tag Manager may be very useful.</p>
+
 <h2>User Stories</h2>
-As a new User I would like to:
+<p>As a new User I would like to:</p>
 <li>be able to understand how to navigate in the application.</li>
 <li>be able to find/search meaning of words and abbreviations.</li>
 <li>be able to sort fast words with alphabet.</li>
@@ -54,7 +63,7 @@ As a new User I would like to:
 <li>Flash messages</li>
 
 <h3>Main Technologies Used</h3>
-For this project I used Python, HTML, CSS, Sass and Javascript programming languages.
+<p>For this project I used Python, HTML, CSS, Sass and Javascript programming languages.</p>
 
 <h3>Tools used</h3>
 <li>Used Heroku for uploading the app and Mongo DB for keeping database.</li>
@@ -123,4 +132,4 @@ MONGODB_NAME = os.environ.get('MONGODB_NAME')</li>
 <li>Go to Heroku. In the heroku dashboard, click on the button "Open App".</li>
 
 <h3>Credits</h3>
-<p>The contents all from Developer and inspired from <a href="https://github.com/RobSimons1/ocean-dictionary">RobSimons1</a> and <a href="https://github.com/haydal810/Milestone-Project-3">David Hayden</a>.</p>
+<p>The contents all from Developer, also inspired from Code Institute lessons, <a href="https://github.com/RobSimons1/ocean-dictionary">RobSimons1</a> and <a href="https://github.com/haydal810/Milestone-Project-3">David Hayden</a>.</p>
