@@ -31,7 +31,7 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <li>be able to create and edir categories.</li>
 
 <h2>Wireframes</h2>
-<p>Wireframes are attached in my github repository as <a href="https://github.com/VictoriaBC/midevglossary/blob/9c6b88c8fa7aee42ba14cfd850605bc9feaf9a69/MiDev_Glossary_Victoria.pdf">MiDev_Glossary_Victoria.pdf</a></p> 
+<p>Wireframes are attached in my github repository as <a href="https://github.com/VictoriaBC/midevglossary/blob/10ee1f98f087c61390dbec702b31081d0c8fc779/MiDev_Glossary_Victoria.pdf">MiDev_Glossary_Victoria.pdf</a></p> 
 <p>The document contains the app structure, mobile and desktop wireframes.</p>
 
 <h2>Features</h2>
