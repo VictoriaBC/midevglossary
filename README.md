@@ -11,7 +11,7 @@
 <h2>Design process:</h2>
 <p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, wireframes and prototype, test) > Develop (tools: html, css, js, python, scss, mongodb and heroku, test: usability and collect feedback then update)</p>
 <p><strong>Discover:</strong>researched the right focus group which are Project Managers and Product Owners, researched and gathered other glossary apps, that I later got inspired from. Decided which platform to code the app on and where to deploy, the database, which code language I should use.
-Languages and platform - html, css, scss, python, gitpod. Database - MongoDB, Deployment platform - Heroku.</p>
+Languages and platform - html, css, scss, javascript, python, gitpod. Database - MongoDB, Deployment platform - Heroku.</p>
 <p><strong>Define:</strong>this process involve defining what the issues for our users and how we solve them, what is expected from an MVP (Minimum Viable Product) and what is expected from Product Owners and Project Managers who do not always have a full technical background.
 This app offers them a place where they can search words they hear from development teams and also store words with a description to save for themselves or share with others. It important that everyone speaks the same language and understand eachother in a project.
 Users search words differently, which is why both an input search field and alphabet navigation are good options.</p>
@@ -71,7 +71,7 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <li>Separate field for links in Add New Word</li>
 
 <h3>Main Technologies Used</h3>
-<p>For this project I used Python, HTML, CSS and Sass programming languages.</p>
+<p>For this project I used Python, HTML, CSS, javascript and Sass programming languages.</p>
 
 <h3>Tools used</h3>
 <li>Used Heroku for uploading the app and Mongo DB for keeping database.</li>
