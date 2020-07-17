@@ -87,8 +87,8 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <li>Google Fonts to easily use simple and recognizable fonts on the internet https://fonts.google.com/.</li>
 
 <h3>Testing</h3>
-<li>User Testing - people were are asked to visit the app and test. Reason is to collect feedback and improve the app.</li>
-<li>Tested browser lists: Google Chrome, Chrome Lighthouse for audit of website, Safari.</li>
+<li>User Testing - people were are asked to visit the app and test. Reason is to collect feedback and improve. After collected feedback I fixed the alphabet navigation that did not work, search was not noticed at first so I added an icon, the app was not responsive due issues in Materialize, but I fixed that by adding "meta name=“viewport” content=“width=device-width, initial-scale=1.0" in the html code under code and using media queries in css. </li>
+<li>Tested browser lists: Google Chrome, Chrome Lighthouse for audit of website, Safari. Everything worked fine. In Chrome audit result are mixed, not less than 79 which means improvement can be made: Best practice scored 79, SEO scored 90, Accessibility 100 and overall performance 89.</li>
 
 <h3>HTML, CSS and JS code</h3>
 <li>W3C HTML Validator.</li>
