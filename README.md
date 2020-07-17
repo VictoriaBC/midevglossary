@@ -8,7 +8,7 @@
 <p>Very often abbreviations are used within development teams and this app helps Managers to gather what they hear and also use this app as an internal dictionary. Developers, Designers, Marketing specialists also have a chance to help the team and create a better way of working. Users can add/edit words, also add/edit categories, they can search words and navigate according to the alphabet.</p>
 <img src="https://github.com/VictoriaBC/midevglossary/blob/master/static/img/Screen%20Shot%202020-07-14%20at%2016.14.10.png?raw=true">
 
-<h2>Design process:</h2>
+<h2>Design process</h2>
 <p>Discover (research focus groups and existing apps, platforms, code) > Define (define issues, brainstorm) > Deliver (create structure, user scenarios and user flow) > Develop (wireframes and prototype, tools: html, css, js, python, scss, mongodb and heroku, test: usability and collect feedback then update)</p>
 <p><strong>Discover:</strong>researched the right focus group which are Project Managers and Product Owners, researched and gathered other glossary apps, that I later got inspired from. Decided which platform to code the app on and where to deploy, the database, which code language I should use.
 Languages and platform - html, css, scss, javascript, python, gitpod. Database - MongoDB, Deployment platform - Heroku.</p>
@@ -20,7 +20,7 @@ Users search words differently, which is why both an input search field and alph
 W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspect to test for responsiveness.</p>
 <p><strong>Note that the Design process is known as <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">Double Diamond</a>, normally used a framework within UX Designers. This project was not done by the book due to lack of time, but much of the methods in the process were included.</strong></p>
 <p>To understand better how users interact with the app it is recommended to do evaluation after the app is launched in production. Gathering feedback surveys, contacting users for an interview and using tools like Hotjar, Google analytics, Google Tag Manager may be very useful.</p>
-<img src="https://github.com/VictoriaBC/midevglossary/blob/1f0f3095138a1f555409748fefbf5c09056e1692/static/img/Screen%20Shot%202020-07-16%20at%2019.30.25.png"><i>Protoype environment.</i>
+<img src="https://github.com/VictoriaBC/midevglossary/blob/1f0f3095138a1f555409748fefbf5c09056e1692/static/img/Screen%20Shot%202020-07-16%20at%2019.30.25.png"><p><i>Image above: Protoype environment in collaboration and prototyping tool <a href="https://www.adobe.com/se/products/xd.html">Adobe XD</a>.</i></p>
 
 <p>Final thoughts for front-end: Creating a functional design system according to Atomic Design may be handful in the future.</p>
 
