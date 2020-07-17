@@ -91,7 +91,7 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <h3>Testing</h3>
 <li>User Testing - people were are asked to visit the app and test. Reason is to collect feedback and improve. After collected feedback I fixed the alphabet navigation that did not work, search was not noticed at first so I added an icon, the app was not responsive due issues in Materialize, but I fixed that by adding "meta name=“viewport” content=“width=device-width, initial-scale=1.0" in the html code under code and using media queries in css. </li>
 <li>Tested browser lists: Google Chrome, Chrome Lighthouse for audit of website, Safari. Everything worked fine. In Chrome audit result are mixed, no less than 79 in both mobile and desktop, which means improvement can be made: Best practice scored 79, SEO scored 90, Accessibility 100 and overall performance 89.</li>
-<a href="https://github.com/VictoriaBC/midevglossary/blob/93fbfd2c831f8974800eadfaf6b009014bcbaa1f/static/img/lighthouse_audit.png">Lighthouse performance Audit test in inspect.</a>
+<img src="https://github.com/VictoriaBC/midevglossary/blob/93fbfd2c831f8974800eadfaf6b009014bcbaa1f/static/img/lighthouse_audit.png"><p><i>Lighthouse performance Audit test in inspect.</i></p>
 
 <h3>HTML, CSS and JS code</h3>
 <li>W3C HTML Validator.</li>
