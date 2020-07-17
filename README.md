@@ -1,5 +1,5 @@
 <p><h1>Milestone 3 for Code Institute - A database web application.</h1><p>
-<p><strong>MiDev Glossary</strong> app offers users such as professionals like Project Managers or Product Owners the possibility to understand their development teams better.</p>
+<p><strong>MiDev Glossary</strong> app offers users/professionals like Project Managers or Product Owners the possibility to understand their development teams better by having a glossary of tech terms used within the project. It is important for to understand each other to form a well-driven environment. Apart from tech teams there is the Marketing team which also benefits from this app.</p>
 <p>You can find links to the application and github repository below:
 <p>The application <a href="https://midevglossary.herokuapp.com/">live here.</a></p>
 <p>The Github link <a href="https://github.com/VictoriaBC/midevglossary">here.</a></p>
