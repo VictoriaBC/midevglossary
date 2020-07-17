@@ -20,9 +20,9 @@ Users search words differently, which is why both an input search field and alph
 W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspect to test for responsiveness.</p>
 <p><strong>Note that the Design process is known as <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">Double Diamond</a>, normally used a framework within UX Designers. This project was not done by the book due to lack of time, but much of the methods in the process were included.</strong></p>
 <p>To understand better how users interact with the app it is recommended to do evaluation after the app is launched in production. Gathering feedback surveys, contacting users for an interview and using tools like Hotjar, Google analytics, Google Tag Manager may be very useful.</p>
-<img src="https://github.com/VictoriaBC/midevglossary/blob/1f0f3095138a1f555409748fefbf5c09056e1692/static/img/Screen%20Shot%202020-07-16%20at%2019.30.25.png">Protoype environment.
+<img src="https://github.com/VictoriaBC/midevglossary/blob/1f0f3095138a1f555409748fefbf5c09056e1692/static/img/Screen%20Shot%202020-07-16%20at%2019.30.25.png"><i>Protoype environment.</i>
 
-<p>Creating a functional design system according to Atomic Design may handful in the future</p>
+<p>Final thoughts for front-end: Creating a functional design system according to Atomic Design may be handful in the future.</p>
 
 <h2>User Stories</h2>
 <p>As a new User I would like to:</p>
