@@ -26,11 +26,13 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 
 <h2>User Stories</h2>
 <p>As a new User I would like to:</p>
-<li>be able to understand how to navigate in the application.</li>
-<li>be able to find/search meaning of words and abbreviations.</li>
-<li>be able to sort fast words with alphabet.</li>
-<li>be able to create and edit words.</li>
-<li>be able to create and edir categories.</li>
+<li>be able to understand how to navigate in the application. In order to that there is a main menu in the header suited for both mobile and desktop.</li>
+<li>be able to find/search meaning of words and abbreviations. A search component has been implemented and search according to a letter, the results appear as an accordion and if there is not found the user sees the information and can go back to previous page with a created Back link.</li>
+<li>be able to sort fast words with alphabet. Another way of searching is through the alphabet navigation which shows all letters that start with the letter and in alphabetical order. If the there is no word under the letter, the user sees a message and has a link to go back to landing page.</li>
+<li>be able to see words in alphabetical order. All words are presented in alphabetical order.</li>
+<li>be able to be warned about deleting a word or category if I clicked the button by mistake. Each word and category can be deleted, the user is asked if they are sure.</li>
+<li>be able to create and edit words. User can create words through the menu and edit through the accordion. A user cannot submit a word if input fields are not filled, the user gets feedback if they have missed.  Pagination and Feedback that a word has been created should be implemented in the next phase.</li>
+<li>be able to create and edit categories. User can create categories through the menu and edit under Manage categories. A user cannot submit a category if input fields are not filled, the user gets feedback if they have missed it. Each category can be deleted, the user is asked if they are sure. Pagination and Feedback that a category has been created should be implemented in the next phase.</li>
 
 <h2>Wireframes</h2>
 <p>Wireframes are attached in my github repository as <a href="https://github.com/VictoriaBC/midevglossary/blob/10ee1f98f087c61390dbec702b31081d0c8fc779/MiDev_Glossary_Victoria.pdf">MiDev_Glossary_Victoria.pdf</a></p> 
@@ -88,7 +90,8 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 
 <h3>Testing</h3>
 <li>User Testing - people were are asked to visit the app and test. Reason is to collect feedback and improve. After collected feedback I fixed the alphabet navigation that did not work, search was not noticed at first so I added an icon, the app was not responsive due issues in Materialize, but I fixed that by adding "meta name=“viewport” content=“width=device-width, initial-scale=1.0" in the html code under code and using media queries in css. </li>
-<li>Tested browser lists: Google Chrome, Chrome Lighthouse for audit of website, Safari. Everything worked fine. In Chrome audit result are mixed, not less than 79 which means improvement can be made: Best practice scored 79, SEO scored 90, Accessibility 100 and overall performance 89.</li>
+<li>Tested browser lists: Google Chrome, Chrome Lighthouse for audit of website, Safari. Everything worked fine. In Chrome audit result are mixed, no less than 79 in both mobile and desktop, which means improvement can be made: Best practice scored 79, SEO scored 90, Accessibility 100 and overall performance 89.</li>
+<a href="https://github.com/VictoriaBC/midevglossary/blob/93fbfd2c831f8974800eadfaf6b009014bcbaa1f/static/img/lighthouse_audit.png">Lighthouse performance Audit test in inspect.</a>
 
 <h3>HTML, CSS and JS code</h3>
 <li>W3C HTML Validator.</li>
