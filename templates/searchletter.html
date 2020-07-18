@@ -4,7 +4,7 @@
 <!-- Result if missing -->
 <div class="row">
     {% if not letter|length %}
-    <p class="text-center" style="font-size: 2rem;"><i>Oops! There are no words that start with this letter. Be the first to add one.<i></p>
+    <p class="text-center" style="font-size: 2rem;"><i>Oops! There are no words that start with this letter or number. Be the first to add one.<i></p>
     <p><a href="{{ url_for('get_words') }}"> << back</a></p>
     {% else %}
     <!-- Result if not missing -->
