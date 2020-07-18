@@ -71,6 +71,7 @@ W3C CSS Validator, Pep8online to test app.py, ami.responsivedesign.is and Inspec
 <li>Pagination</li>
 <li>Search under Manage Categories</li>
 <li>Separate field for links in Add New Word</li>
+<li>Sort by category</li>
 
 <h3>Main Technologies Used</h3>
 <p>For this project I used Python, HTML, CSS, javascript and Sass programming languages.</p>
